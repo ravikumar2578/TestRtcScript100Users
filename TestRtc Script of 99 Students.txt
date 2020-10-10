@@ -1,0 +1,1405 @@
+	// Variables that we will use in this example
+	var agentType = Number(process.env.RTC_IN_SESSION_ID);
+	var sec = 1000;
+	var drop = 10000;
+
+	client.resizeWindow(1280, 720);
+
+	if (agentType === 1) {
+
+	    // Browser 1 actions take place here
+	    client
+
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112398/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+
+
+
+	} else if (agentType === 2) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+
+	        .rtcSetTestExpectation("video.in == 1")
+
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        /*    .pause(30000)
+	            .url('https://www.extramarks.com/')
+	            .useXpath()
+	            .waitForElementVisible('//*[@id="navigation-top"]//li//a[@class="signin"][contains(text(),"LOGIN")]', 15000)
+	            .pause(1000)
+	            .click('//*[@id="navigation-top"]//li//a[@class="signin"][contains(text(),"LOGIN")]')
+	            .waitForElementVisible('//*[@class="font-medium text-black"]', 15000)
+	            .pause(1000)
+	            .click('//*[@class="font-medium text-black"]')
+	            .waitForElementVisible('//*[@id="usernameLogin"]', 15000)
+	            .assert.visible('//*[@id="usernameLogin"]')
+	            .pause(1000)
+	            .setValue('//*[@id="usernameLogin"]', '9111112351')
+	            .waitForElementVisible('//*[@id="passwdLogin"]', 15000)
+	            .assert.visible('//*[@id="passwdLogin"]')
+	            .pause(1000)
+	            .setValue('//*[@id="passwdLogin"]', '123456')
+	            .pause(1000)
+	            .click('//*[@id="login-account"]')
+	            .pause(2000)
+	            .waitForElementVisible('//*[@class="media-heading text-white mt5"][contains(text(),"Long Term Course")]', 30000)
+	            .pause(2000)
+	            .click('//*[@class="media-heading text-white mt5"][contains(text(),"Long Term Course")]')
+	            .rtcScreenshot("1")
+	            .waitForElementVisible('//*[@id="livesessionredirect"]', 30000)
+	            .pause(1000)
+	            .click('//*[@id="livesessionredirect"]')
+	            //  client.execute('document.getElementsByTagName("body").sendKeys(client.Keys.CONTROL, client.Keys.PAGE_DOWN)')
+	            .pause(30000)
+	            .rtcScreenshot("1")
+	            .windowHandles(function(result) {
+	                var newWindow;
+	                newWindow = result.value[2]
+	                this.switchWindow(newWindow)
+	            })
+	            .rtcScreenshot("1")*/
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112300/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+
+
+	} else if (agentType === 3) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112301/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 4) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112302/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 5) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112303/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 6) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112304/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 7) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112305/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 8) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112306/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 9) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112307/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 10) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112308/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 11) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112309/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 12) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112310/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 13) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112311/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 14) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112312/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 15) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112313/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 16) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112314/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 17) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112315/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 18) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112316/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 19) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112317/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 20) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112318/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 21) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112319/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 22) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112320/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 23) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112321/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 24) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112322/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 25) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112323/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 26) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112324/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 27) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112325/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 28) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112326/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 29) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112327/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 30) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112328/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 31) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112329/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 32) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112330/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 33) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112331/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 34) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112332/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 35) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112333/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 36) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112334/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 37) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112335/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 38) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112336/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 39) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112337/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 40) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112338/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 41) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112339/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 42) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112340/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 43) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112341/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 44) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112342/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 45) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112343/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 46) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112344/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 47) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112345/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 48) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112346/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 49) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112347/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 50) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112348/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 51) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112349/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 52) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112350/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 53) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112351/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 54) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112352/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 55) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112353/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 56) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112354/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 57) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112355/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 58) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112356/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 59) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112357/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 60) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112358/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	} else if (agentType === 61) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112359/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 62) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112360/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 63) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112361/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 64) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112362/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 65) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112363/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 66) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112364/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 67) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112365/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 68) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112366/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 69) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112367/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 70) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112368/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 71) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112369/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 72) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112370/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 73) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112371/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 74) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112372/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 75) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112373/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 76) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112374/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 77) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112375/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 78) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112376/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 79) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112377/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 80) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112378/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 81) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112379/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 82) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112380/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 83) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112381/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 84) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112382/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 85) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112383/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 86) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112384/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 87) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112385/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 88) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112386/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 89) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112387/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 90) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112388/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 91) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112389/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 92) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112390/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 93) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112391/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 94) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112392/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 95) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112393/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 96) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112394/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 97) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112395/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else if (agentType === 98) {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112396/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+	} else {
+
+	    client
+	        .rtcSetTestExpectation("audio.in == 1")
+	        .rtcSetTestExpectation("video.in == 1")
+	        .rtcSetTestExpectation("audio.in.bitrate > 0")
+	        .rtcSetTestExpectation("video.in.bitrate > 0")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/setuserdata/9111112397/Student/testsjtestingelectron/emscc/emscc_5')
+	        .pause(30000)
+	        .rtcScreenshot("1")
+	        .url('https://liveclass.extramarks.com/live_classroom/liveclass/join/emscc_5')
+	        .pause(50000)
+	        .rtcScreenshot("1")
+
+	}
+
+	client.pause(100000)
+	    .rtcScreenshot("2")
+	    .pause(100000)
